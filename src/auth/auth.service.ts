@@ -69,6 +69,7 @@ export class AuthService {
     }
 
     const jwt = await this.jwtService.signAsync({ user });
+    console.log(jwt);
 
     return {
       ...user,

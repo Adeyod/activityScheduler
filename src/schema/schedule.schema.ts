@@ -10,13 +10,13 @@ export class Schedule {
   title: string;
 
   @Prop()
-  startTime: Date;
+  startTime: string;
 
   @Prop()
-  endTime: Date;
+  endTime: string;
 
   @Prop()
-  reminderTime: Date;
+  reminderTime: string;
 
   @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'User' })
   user: User;
